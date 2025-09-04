@@ -26,7 +26,7 @@ The data for this project is sourced from the Kaggle dataset:
 
 # Schema
 
-***sql
+...sql
 DROP TABLE IF EXISTS netflix;
 CREATE TABLE netflix
 (
@@ -45,7 +45,7 @@ CREATE TABLE netflix
 );
 
 SELECT * FROM netflix; 
-***
+...
 
 
 	
