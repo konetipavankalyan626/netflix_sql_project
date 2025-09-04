@@ -178,7 +178,11 @@ WHERE casts LIKE '%Salman Khan%';
 ```
 ## Findings and Conclusion
 
-#### •Content Distribution: Netflix hosts a diverse range of movies and TV shows, but movies dominate the catalog. TV shows have seen rapid growth in recent years
+#### • Content Distribution: Netflix hosts a diverse range of movies and TV shows, but movies dominate the catalog. TV shows have seen rapid growth in recent years.
+
+#### • Audience Ratings: The most frequent rating is TV-MA, followed by TV-14. This shows Netflix primarily caters to adult and mature audiences.
+
+#### • Geographic Presence: The USA has the largest number of titles, followed by India, UK, and Canada, highlighting Netflix’s global reach and India’s importance as a growth market.
 
 
 
