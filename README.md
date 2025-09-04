@@ -8,7 +8,7 @@ The Netflix Data Analysis project aims to explore the Netflix Titles dataset usi
 
 By analyzing this dataset, we gain insights into content diversity, regional representation, rating distribution, and release trends on Netflix.
 
-# Objectives
+## Objectives
 
 • Compare the number of Movies vs TV Shows available on Netflix.
 
@@ -18,13 +18,13 @@ By analyzing this dataset, we gain insights into content diversity, regional rep
 
 • Examine regional representation by comparing countries like USA and India.
 
-# Dataset
+## Dataset
 
 The data for this project is sourced from the Kaggle dataset:
 
 • Dataset Link: https://github.com/konetipavankalyan626/netflix_sql_project.git
 
-# Schema
+## Schema
 
 ```sql
 DROP TABLE IF EXISTS netflix;
@@ -45,16 +45,16 @@ CREATE TABLE netflix
 );
 SELECT * FROM netflix;
 ```
-# Business Problems and Solutions
+## Business Problems and Solutions
 
-# 1. How many Movies and TV Shows are there
+## 1. How many Movies and TV Shows are there
 ```sql
 SELECT type, COUNT(*) AS total
 FROM netflix
 GROUP BY type;
 ```
 
-# 2. What are the most common ratings for Movies and TV Shows
+## 2. What are the most common ratings for Movies and TV Shows
 ```sql
 SELECT type, rating, COUNT(*) AS total
 FROM netflix 
@@ -62,7 +62,7 @@ GROUP BY type, rating
 ORDER BY total DESC;
 ```
 
-# 3. Which country has the highest number of Netflix titles
+## 3. Which country has the highest number of Netflix titles
 ```sql
 SELECT country, COUNT(*) AS total
 FROM netflix 
@@ -72,7 +72,7 @@ ORDER BY total DESC
 LIMIT 10;
 ```
 
-# 4. Which year had the highest number of releases on Netflix 
+## 4. Which year had the highest number of releases on Netflix 
 ```sql
 SELECT release_year, COUNT(*) AS total
 FROM netflix
@@ -81,7 +81,7 @@ ORDER BY total DESC
 LIMIT 1;
 ```
 
-# 5. Find the longest movie on Netflix
+## 5. Find the longest movie on Netflix
 ```sql
 SELECT title, duration
 FROM netflix
@@ -89,14 +89,14 @@ WHERE type = 'Movie'
 LIMIT 1;
 ```
 
-# 6. How many TV Shows have more than 5 season
+## 6. How many TV Shows have more than 5 season
 ```sql
 SELECT COUNT(*) AS total_tvshows
 FROM netflix
 WHERE type = 'TV Show'
 ```
 
-# 7. Who are the top 10 directors with the most Netflix titles
+## 7. Who are the top 10 directors with the most Netflix titles
 ```sql
 SELECT director, COUNT(*) AS total
 FROM netflix
@@ -106,21 +106,21 @@ ORDER BY total DESC
 LIMIT 10;
 ```
 
-# 8. List all Movies released in 2020
+## 8. List all Movies released in 2020
 ```sql
 SELECT title
 FROM netflix
 WHERE type = 'Movie' AND release_year = 2020;
 ```
 
-# 9. Find all Indian Movies and TV Shows
+## 9. Find all Indian Movies and TV Shows
 ```sql
 SELECT title, type
 FROM netflix
 WHERE country LIKE '%India%';
 ```
 
-# 10. Which genre has the most titles
+## 10. Which genre has the most titles
 ```sql
 SELECT listed_in, COUNT(*) AS total
 FROM netflix
@@ -129,7 +129,7 @@ ORDER BY total DESC
 LIMIT 1;
 ```
 
-# 11. Who are the top 10 most frequent actors
+## 11. Who are the top 10 most frequent actors
 ```sql
 SELECT casts, COUNT(*) AS total
 FROM netflix
@@ -139,7 +139,7 @@ ORDER BY total DESC
 LIMIT 10;
 ```
 
-# 12. List the top 10 countries with the most content on Netflix
+## 12. List the top 10 countries with the most content on Netflix
 ```sql
 SELECT country, COUNT(*) AS total
 FROM netflix
@@ -149,7 +149,7 @@ ORDER BY total DESC
 LIMIT 10;
 ```
 
-# 13. What is the average number of Movies released per year
+## 13. What is the average number of Movies released per year
 ```sql
 SELECT ROUND(AVG(movies_per_year), 2) AS avg_movies_per_year
 FROM (
@@ -160,7 +160,7 @@ FROM (
 ) sub;
 ```
 
-# 14. What are the top 5 genres in India
+## 14. What are the top 5 genres in India
 ```sql
 SELECT listed_in, COUNT(*) AS total
 FROM netflix
@@ -170,7 +170,7 @@ ORDER BY total DESC
 LIMIT 5;
 ```
 
-# 15. Find all content where “Salman Khan” appears
+## 15. Find all content where “Salman Khan” appears
 ```sql
 SELECT title, type
 FROM netflix
