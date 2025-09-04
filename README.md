@@ -24,7 +24,7 @@ The data for this project is sourced from the Kaggle dataset:
 
 • Dataset Link: https://github.com/konetipavankalyan626/netflix_sql_project.git
 
-# Schemas
+# Schema
 
 ```sql
 DROP TABLE IF EXISTS netflix;
