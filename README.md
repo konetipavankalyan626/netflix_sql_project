@@ -10,4 +10,14 @@ By analyzing this dataset, we gain insights into content diversity, regional rep
 
 # Objectives
 
+.compare the number of Movies vs TV Shows available on Netflix.
+
+.Analyze the distribution of content ratings 
+
+.Identify top countries, genres, directors, and actors with the most contributions.
+
+.Examine regional representation by comparing countries like USA and India.
+
+.Highlight the content preferences of Netflix audiences based on data.
+
   
