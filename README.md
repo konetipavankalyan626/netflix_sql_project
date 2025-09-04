@@ -184,7 +184,7 @@ WHERE casts LIKE '%Salman Khan%';
 
 #### • Geographic Presence: The USA has the largest number of titles, followed by India, UK, and Canada, highlighting Netflix’s global reach and India’s importance as a growth market.
 
-This findings present a clear picture of Netflix’s growth, audience targeting, and global reach, making it a useful reference point for shaping future content strategies and business decisions
+#### This findings present a clear picture of Netflix’s growth, audience targeting, and global reach, making it a useful reference point for shaping future content strategies and business decisions
 
 
 
