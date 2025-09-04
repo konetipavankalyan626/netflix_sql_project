@@ -48,10 +48,11 @@ SELECT * FROM netflix;
 # Business Problems and Solutions
 
 # 1. How many Movies and TV Shows are there
-
+```sql
 SELECT type, COUNT(*) AS total
 FROM netflix
 GROUP BY type;
+```
 
 # 2. What are the most common ratings for Movies and TV Shows
 
