@@ -22,7 +22,7 @@ By analyzing this dataset, we gain insights into content diversity, regional rep
 
 The data for this project is sourced from the Kaggle dataset:
 
-• Dataset Link: https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download
+• Dataset Link: https://github.com/konetipavankalyan626/netflix_sql_project.git
 
 	
 	
