@@ -48,7 +48,8 @@ SELECT * FROM netflix;
 # Business Problems and Solutions
 
 ```sql
-## 1. How many Movies and TV Shows are there
+# How many tv shows are there
+
 SELECT type, COUNT(*) AS total
 FROM netflix
 GROUP BY type;
