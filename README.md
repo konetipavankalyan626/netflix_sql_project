@@ -18,4 +18,8 @@ By analyzing this dataset, we gain insights into content diversity, regional rep
 
 • Examine regional representation by comparing countries like USA and India.
 
-  
+# Dataset
+
+The data for this project is sourced from the Kaggle dataset:
+
+• Dataset Link: Movies Dataset
