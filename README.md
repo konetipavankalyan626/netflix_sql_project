@@ -176,9 +176,9 @@ SELECT title, type
 FROM netflix
 WHERE casts LIKE '%Salman Khan%';
 ```
-# Findings and Conclusion
+## Findings and Conclusion
 
-# Content Distribution : 
+#### Content Distribution : 
 
 
 
