@@ -176,6 +176,9 @@ SELECT title, type
 FROM netflix
 WHERE casts LIKE '%Salman Khan%';
 ```
+# Findings and Conclusion
+
+🎬 Content Distribution: Netflix hosts a diverse range of movies and TV shows, but movies dominate the catalog. TV shows have seen rapid growth in recent years
 
 
 
