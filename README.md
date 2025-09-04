@@ -45,6 +45,11 @@ CREATE TABLE netflix
 );
 SELECT * FROM netflix;
 ```
+# Business Problems and Solutions
+
+```sql
+
+
 
 
 
