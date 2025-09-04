@@ -48,20 +48,20 @@ SELECT * FROM netflix;
 # Business Problems and Solutions
 
 ```sql
--- 1. How many Movies and TV Shows are there
+## 1. How many Movies and TV Shows are there
 SELECT type, COUNT(*) AS total
 FROM netflix
 GROUP BY type;
 ```
 ```sql
--- 2. What are the most common ratings for Movies and TV Shows
+## 2. What are the most common ratings for Movies and TV Shows
 SELECT type, rating, COUNT(*) AS total
 FROM netflix 
 GROUP BY type, rating
 ORDER BY total DESC;
 ```
 ```sql
--- 3. Which country has the highest number of Netflix titles
+## 3. Which country has the highest number of Netflix titles
 SELECT country, COUNT(*) AS total
 FROM netflix 
 WHERE country IS NOT NULL
@@ -70,7 +70,7 @@ ORDER BY total DESC
 LIMIT 10;
 ```
 ```sql
--- 4. Which year had the highest number of releases on Netflix 
+## 4. Which year had the highest number of releases on Netflix 
 SELECT release_year, COUNT(*) AS total
 FROM netflix
 GROUP BY release_year
@@ -78,20 +78,20 @@ ORDER BY total DESC
 LIMIT 1;
 ```
 ```sql
--- 5. Find the longest movie on Netflix
+## 5. Find the longest movie on Netflix
 SELECT title, duration
 FROM netflix
 WHERE type = 'Movie'
 LIMIT 1;
 ```
 ```sql
--- 6. How many TV Shows have more than 5 season
+## 6. How many TV Shows have more than 5 season
 SELECT COUNT(*) AS total_tvshows
 FROM netflix
 WHERE type = 'TV Show'
 ```
 ```sql
--- 7. Who are the top 10 directors with the most Netflix titles
+## 7. Who are the top 10 directors with the most Netflix titles
 SELECT director, COUNT(*) AS total
 FROM netflix
 WHERE director IS NOT NULL
@@ -100,19 +100,19 @@ ORDER BY total DESC
 LIMIT 10;
 ```
 ```sql
--- 8. List all Movies released in 2020
+## 8. List all Movies released in 2020
 SELECT title
 FROM netflix
 WHERE type = 'Movie' AND release_year = 2020;
 ```
 ```sql
--- 9. Find all Indian Movies and TV Shows
+## 9. Find all Indian Movies and TV Shows
 SELECT title, type
 FROM netflix
 WHERE country LIKE '%India%';
 ```
 ```sql
--- 10. Which genre has the most titles
+## 10. Which genre has the most titles
 SELECT listed_in, COUNT(*) AS total
 FROM netflix
 GROUP BY listed_in
@@ -120,7 +120,7 @@ ORDER BY total DESC
 LIMIT 1;
 ```
 ```sql
--- 11. Who are the top 10 most frequent actors
+## 11. Who are the top 10 most frequent actors
 SELECT casts, COUNT(*) AS total
 FROM netflix
 WHERE casts IS NOT NULL
@@ -129,7 +129,7 @@ ORDER BY total DESC
 LIMIT 10;
 ```
 ```sql
--- 12. List the top 10 countries with the most content on Netflix
+## 12. List the top 10 countries with the most content on Netflix
 SELECT country, COUNT(*) AS total
 FROM netflix
 WHERE country IS NOT NULL
@@ -138,7 +138,7 @@ ORDER BY total DESC
 LIMIT 10;
 ```
 ```sql
--- 13. What is the average number of Movies released per year
+## 13. What is the average number of Movies released per year
 SELECT ROUND(AVG(movies_per_year), 2) AS avg_movies_per_year
 FROM (
     SELECT release_year, COUNT(*) AS movies_per_year
@@ -148,7 +148,7 @@ FROM (
 ) sub;
 ```
 ```sql
--- 14. What are the top 5 genres in India
+## 14. What are the top 5 genres in India
 SELECT listed_in, COUNT(*) AS total
 FROM netflix
 WHERE country LIKE '%India%'
@@ -157,7 +157,7 @@ ORDER BY total DESC
 LIMIT 5;
 ```
 ```sql
--- 15. Find all content where “Salman Khan” appears
+## 15. Find all content where “Salman Khan” appears
 SELECT title, type
 FROM netflix
 WHERE casts LIKE '%Salman Khan%';
