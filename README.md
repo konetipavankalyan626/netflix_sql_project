@@ -186,10 +186,11 @@ WHERE casts LIKE '%Salman Khan%';
 
 #### This findings present a clear picture of Netflix’s growth, audience targeting, and global reach, making it a useful reference point for shaping future content strategies and business decisions
 
-# Author - Pavan Kalyan Koneti
+## Author - Pavan Kalyan Koneti
 This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
 
 -Linkedin:https://www.linkedin.com/in/pavankalyan585/
+
 -Gmail:konetipavankalyan225@gmail.com
 
 
