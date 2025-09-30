@@ -1,4 +1,5 @@
 # Netflix Movies and TV Shows Data Analysis using SQL
+"Netflix Data Analysis using SQL (Movies vs TV Shows, Top Countries, Ratings, Genres)".
 
 ![Netflix Logo](https://github.com/konetipavankalyan626/netflix_sql_project/blob/main/netflix.jpg)
 
